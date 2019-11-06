@@ -1,9 +1,10 @@
 module.exports = {
-    configureWebpack: config => {
-      if (process.env.NODE_ENV === 'production') {
-        // mutate config for production...
-      } else {
-        // mutate for development...
-      }
+  configureWebpack: (config) => {
+    if (process.env.NODE_ENV === 'production') {
+      // mutate config for production...
+    } else {
+      // mutate for development...
+      console.log("config: %j",config)
     }
-}
+  },
+};
